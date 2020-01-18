@@ -14,9 +14,21 @@ class HomeController < ApplicationController
     @prices_uri = URI(@prices_url)
     @prices_response = Net::HTTP.get(@prices_uri)
     @prices = JSON.parse(@prices_response)
-
   end
 
   def prices
+    require 'net/http'
+    require 'json'
+
+    @symbol = params[:sym]
+    if @symbol
+      @symbol = @symbol.upcase
+
+      @quotes_url = 'https://min-api.cryptocompare.com/data/pricemultifull?fsyms='+ @symbol +'&tsyms=USD'
+      @quotes_uri = URI(@quotes_url)
+      @quotes_response = Net::HTTP.get(@quotes_uri)
+      @quotes = JSON.parse(@quotes_response)
+    end
   end
+  
 end

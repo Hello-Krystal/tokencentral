@@ -16,4 +16,12 @@ RSpec.describe HomeController, type: :controller do
     end
   end
 
+  describe "post#prices action" do
+    it "should successfully show the user selected symbol with updated price on the page" do
+      post :prices
+      expect(response).to have_http_status(:success)
+    end
+
+  end
+
 end
