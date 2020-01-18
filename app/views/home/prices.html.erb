@@ -6,7 +6,7 @@
 
 <% if @symbol %>
   <% if @quotes["Response"] %>
-    <h4>I'm sorry, it looks like <%= @symbol %> doesn't exist. Please try again...</h4>
+    <h4>I'm sorry, the symbol you entered doesn't exist. Please try again...</h4>
   <% else %>
 
     <% @quotes["DISPLAY"].each do |key, value| %>
