@@ -1,1 +1,61 @@
 @import "bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+html,body {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Montserrat', sans-serif;
+  // background-color: #000;
+}
+
+.jumbotron {
+  background-color: #000;
+  color: #FFF;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  font-weight: bold;
+}
+
+img {
+  max-width: 100%;
+}
+
+.greeting {
+  font-size: 5em;
+}
+.sub-greeting {
+  color: #d3d3d3;
+  font-size: 2.5em;
+}
+
+h2 {
+  text-align: center;
+}
+
+h5 {
+  font-weight: bold;
+}
+
+.blockquote {
+  font-size: 2.5em;
+}
+
+.card-img-top {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5%;
+  width: 100em;
+  height: 25em;
+}
+
+.data_container {
+  background-color: #34495E;
+}
+
+.price_container {
+  background-color: #000;
+}

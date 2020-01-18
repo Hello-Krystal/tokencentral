@@ -1,7 +1,18 @@
-<h1>Welcome, Investor </h1>
+</div><!--end_col-md-9-->
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+      <br/>
+      <h1 class="greeting">Welcome to Token Central!</h1>
+      <p class="sub-greeting">Your hub for the latest Crypto news and prices. </p>
+      <img src="https://hellostorage.s3.amazonaws.com/ethereum.jpeg">
+  </div>
+</div>
 
 <br/><br/>
-<h2> Price Summary</h2>
+<br/><br/>
+<div class="col-md-12">
+<div class="price_table">
+<h2>Price Summary</h2>
 <hr>
 <table class="table table-striped table-bordered table-hover">
   <thead class="thead-dark">
@@ -27,16 +38,20 @@
     <% end %>
   </tbody>
 </table>
+</div>
+</div>
 
 <br/><br/>
-
-<h2>Breaking News ... </h2>
+<br/><br/>
+<div class="data_container">
+<br/><br/>
+<h2 style="color: #FFF;">Latest Stories ... </h2>
 <hr>
-<div class="container">
+<div class="col-md-12">
   <div class="row">
   <% for x in @news["Data"] %>
     <div class="col-sm">
-      <div class="card" style="width: 18rem;">
+      <div class="card" style="width: 24rem;">
         <img src="<%= x["imageurl"] %>" class="card-img-top" alt="<%= x["source"] %>">
         <div class="card-body">
           <h5 class="card-title"><%= x["title"] %></h5>
@@ -49,3 +64,18 @@
   <% end %>
   </div>
 </div>
+</div>
+</div>
+<br/><br/>
+
+<div class="jumbotron jumbotron-fluid">
+  <blockquote class="blockquote text-center">
+    <p style="margin: 1em;">Attending the Columbia Engineering Coding Bootcamp has unlocked a whole new world of possibility.
+    The key to this world is not tied to any one language or framework. The key that unlocked this world is tenacity and discipline.
+    Thank you Columbia and the Trilogy Education Team for helping me find that key within myself...</p>
+  <footer class="blockquote-footer">Krystal Raysor<cite title="Source Title"></cite></footer>
+</blockquote>
+
+</div>
+
+<br/><br/>
